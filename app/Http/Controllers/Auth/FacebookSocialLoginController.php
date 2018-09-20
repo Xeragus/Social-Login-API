@@ -30,6 +30,7 @@ class FacebookSocialLoginController extends Controller
       }
 
       Auth::login($authUser);
+      
       return redirect()->route('home');
     }
 }
